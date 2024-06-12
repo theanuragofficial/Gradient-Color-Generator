@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2019/09/22/16/18/bicycle-4496443_640.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper {
+  background: #fff;
+  width: 450px;
+  padding: 25px;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+.wrapper .gradient-box {
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(to left top, #977dfe, #6878ff);
+  border-radius: 10px;
+}
+.wrapper .row {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.row :where(.column, button) {
+  width: calc(100% / 2 - 12px);
+}
+.options p {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.options .select-box {
+  border: 1px solid #000;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.select-box select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.1rem;
+}
+.colors input {
+  height: 40px;
+  width: calc(100% / 2 - 20px);
+}
+.colors input:last-child {
+  margin-left: 6px;
+}
+.options .colors {
+  margin-left: 65px;
+}
+
+.wrapper textarea {
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  color: #000;
+  resize: none;
+  font-size: 1rem;
+}
+.buttons button {
+  font-size: 1rem;
+  padding: 15px 0;
+  border: 2px solid #000;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0 0 -20px;
+}
+.buttons .refresh {
+  background: gray;
+  color: #fff;
+}
+.buttons .copy {
+  background: rgb(247, 204, 210);
+  color: #000;
+}
